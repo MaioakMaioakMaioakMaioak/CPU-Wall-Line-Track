@@ -1,29 +1,23 @@
 # Check -> Left - Front - Right 
 
-def Check() : 
-	if Left == ไม่ว่าง :
-		if Front == ไม่ว่าง : 
-		    if Right == ไม่ว่าง:
-		        Backward()
-		        break()
-		    else : 
-    			TurnRight()
-    			break 
-		else if Front == ว่าง : 
-			Forward()
-			break()
-		Forward()
-		break() 
-		
-	else if Left == ว่าง :  
-		if Front == ไม่ว่าง : 
-			TurnLeft()
-			break 
-		if Front == ว่าง : 
-			break()
-		Forward()
-		break()
-		
-	else : 
-		return Check() 
+def Check():
+    if Left == "ไม่ว่าง":
+        if Front == "ไม่ว่าง":
+            if Right == "ไม่ว่าง":
+                Backward()
+                return Check()
+            else:
+                TurnRight()
+                return Check()
+        elif Front == "ว่าง":
+            Forward()
+            return Check()
+    
+    elif Left == "ว่าง":
+        TurnLeft()
+        return Check()
+    
+    else:
+        return Check()
+
 	
