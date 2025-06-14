@@ -10,5 +10,7 @@ void setup() {
 }
 
 void loop() {
- 
+    waitSW_A_bmp();	//กดสวิตซ์สีส้ม
+    AO();
+    delay(500);
 }
