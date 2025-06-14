@@ -1,0 +1,14 @@
+#include <POP32.h>
+
+int left_sensor, right_sensor, front_sensor; 
+int ref_left = ,
+    ref_right = ,
+    ref_front = ; 
+
+void setup() {
+
+}
+
+void loop() {
+ 
+}
